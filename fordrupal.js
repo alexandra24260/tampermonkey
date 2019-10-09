@@ -3,13 +3,7 @@
     var credites = [];
     $('h3').each(function() {
         let moduleName = $(this).text();
-        /*    let sibling = $(this).next("ul").html();
-            let link = $(sibling).find("a").attr('href');
-            let task = $(sibling).find("a").text();
-            let date = $(sibling).find("span.views-field-changed").text();
-            credites.push(['', moduleName, task, link, date]);*/
         $(this).next("ul a").each(function() {
-            ;
             let link = $(this).attr('href');
             let task = $(this).text();
             let date = $(this).find("span.views-field-changed").text();
